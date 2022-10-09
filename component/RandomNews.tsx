@@ -6,7 +6,7 @@ const RandomNews:NextPage = () => {
   return (
     <div className="flex flex-wrap gap-3 items-center">
     <Link href="/">
-      <div className="w-2/4 md:w-1/4">
+      <div className="cursor-pointer hover:border-b-2 hover:border-primary transition-colors w-48% md:w-32% lg:w-24%">
         <h2 className="font-semibold text-lg">
           Lorem Ipsum is simply dummy text.
         </h2>
@@ -18,7 +18,7 @@ const RandomNews:NextPage = () => {
       </div>
     </Link> {/**-------- */}
     <Link href="/">
-      <div className="w-2/4 md:w-1/4">
+      <div className="cursor-pointer hover:border-b-2 hover:border-primary transition-colors w-48% md:w-32% lg:w-24%">
         <h2 className="font-semibold text-lg">
           Lorem Ipsum is simply dummy text.
         </h2>
@@ -30,7 +30,7 @@ const RandomNews:NextPage = () => {
       </div>
     </Link> {/**-------- */}
     <Link href="/">
-      <div className="w-2/4 md:w-1/4">
+      <div className="cursor-pointer hover:border-b-2 hover:border-primary transition-colors w-48% md:w-32% lg:w-24%">
         <h2 className="font-semibold text-lg">
           Lorem Ipsum is simply dummy text.
         </h2>
@@ -42,7 +42,7 @@ const RandomNews:NextPage = () => {
       </div>
     </Link> {/**-------- */}
     <Link href="/">
-      <div className="w-2/4 md:w-1/4">
+      <div className="cursor-pointer hover:border-b-2 hover:border-primary transition-colors w-48% md:w-32% lg:w-24%">
         <h2 className="font-semibold text-lg">
           Lorem Ipsum is simply dummy text.
         </h2>
@@ -54,7 +54,7 @@ const RandomNews:NextPage = () => {
       </div>
     </Link> {/**-------- */}
     <Link href="/">
-      <div className="w-2/4 md:w-1/4">
+      <div className="cursor-pointer hover:border-b-2 hover:border-primary transition-colors w-48% md:w-32% lg:w-24%">
         <h2 className="font-semibold text-lg">
           Lorem Ipsum is simply dummy text.
         </h2>
