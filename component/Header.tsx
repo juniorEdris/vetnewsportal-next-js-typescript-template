@@ -16,7 +16,7 @@ const Header: NextPage = () => {
     }
   };
   return (
-    <div className="flex items-center md:gap-x-4 justify-between md:justify-evenly">
+    <div className="flex items-center md:gap-x-4 justify-between md:justify-evenly z-4">
       <div className="flex items-center gap-2">
         <div className="lg:hidden cursor-pointer">
           <svg
@@ -56,7 +56,7 @@ const Header: NextPage = () => {
           <input
             value={searchValue}
             onChange={(e) => setSearchValue(e.target.value)}
-            className="bg-light p-3 md:text-md font-medium border-2 border-gray-100 focus:outline-none focus:border-2 focus:border-gray-300 md:w-[350px] lg:w-[700px] rounded-full  md:top-0"
+            className="bg-light p-3 md:text-md font-medium border-2 border-gray-100 focus:outline-none focus:border-2 focus:border-primary md:w-[350px] lg:w-[700px] rounded-full  md:top-0"
             placeholder="Enter keywords"
           />
           <button
@@ -68,11 +68,11 @@ const Header: NextPage = () => {
         </form>
       </div>
       <div className="flex justify-center items-center">
-        <span className="cursor-pointer mr-3 text-sm md:text-base font-medium">
+        <span className="cursor-pointer mr-3 text-sm md:text-base font-medium hover:text-crystal">
           Sign up for newsletters
         </span>
         <Link href="/signup">
-          <span className="text-sm md:text-base font-medium cursor-pointer">
+          <span className="text-sm md:text-base font-medium cursor-pointer hover:text-crystal">
             SIGN UP
           </span>
         </Link>

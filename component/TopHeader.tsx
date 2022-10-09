@@ -9,11 +9,11 @@ const TopHeader: NextPage = () => {
       <div className="w-full lg:w-1/2 flex gap-5 items-center justify-end">
         <MenuDropDown
           title="vetnews special"
-          custom_classes="text-primary capitalize text-sm md:font-medium"
+          custom_classes="text-primary capitalize text-sm md:font-medium hover:text-crystal z-5"
         />
         <MenuDropDown
           title="more news"
-          custom_classes="text-primary capitalize text-sm md:font-medium"
+          custom_classes="text-primary capitalize text-sm md:font-medium hover:text-crystal z-5"
         />
       </div>
     </div>

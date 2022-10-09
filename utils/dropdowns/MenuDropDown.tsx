@@ -10,7 +10,7 @@ type MenuDropDownType = {
 const MenuDropDown = ({ custom_classes, title }: MenuDropDownType) => {
   return (
     <div className="text-right">
-      <Menu as="div" className="relative inline-block text-left">
+      <Menu as="div" className="relative inline-block text-left z-5">
         <div>
           <Menu.Button
             className={`inline-flex w-full justify-center rounded-md text-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 ${custom_classes}`}
@@ -37,7 +37,7 @@ const MenuDropDown = ({ custom_classes, title }: MenuDropDownType) => {
                 {({ active }) => (
                   <button
                     className={`${
-                      active ? "bg-violet-500 text-white" : "text-gray-900"
+                      active ? "bg-crystal text-white" : "text-primary"
                     } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                   >
                     {active ? (
@@ -59,7 +59,7 @@ const MenuDropDown = ({ custom_classes, title }: MenuDropDownType) => {
                 {({ active }) => (
                   <button
                     className={`${
-                      active ? "bg-violet-500 text-white" : "text-gray-900"
+                      active ? "bg-crystal text-white" : "text-primary"
                     } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                   >
                     {active ? (
@@ -83,7 +83,7 @@ const MenuDropDown = ({ custom_classes, title }: MenuDropDownType) => {
                 {({ active }) => (
                   <button
                     className={`${
-                      active ? "bg-violet-500 text-white" : "text-gray-900"
+                      active ? "bg-crystal text-white" : "text-primary"
                     } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                   >
                     {active ? (
@@ -105,7 +105,7 @@ const MenuDropDown = ({ custom_classes, title }: MenuDropDownType) => {
                 {({ active }) => (
                   <button
                     className={`${
-                      active ? "bg-violet-500 text-white" : "text-gray-900"
+                      active ? "bg-crystal text-white" : "text-primary"
                     } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                   >
                     {active ? (
@@ -129,7 +129,7 @@ const MenuDropDown = ({ custom_classes, title }: MenuDropDownType) => {
                 {({ active }) => (
                   <button
                     className={`${
-                      active ? "bg-violet-500 text-white" : "text-gray-900"
+                      active ? "bg-crystal text-white" : "text-primary"
                     } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                   >
                     {active ? (

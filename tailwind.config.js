@@ -7,6 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      zIndex: {
+        4: "4",
+        5: "5",
+      },
       width: {
         1600: "1600px",
         400: "400px",
@@ -23,7 +27,7 @@ module.exports = {
         458: "458px",
       },
       top: {
-        " 50%": "50%",
+        "50%": "50%",
       },
       backgroundColor: {
         light: "#FFFFFF",
