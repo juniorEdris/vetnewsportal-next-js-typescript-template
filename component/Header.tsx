@@ -73,7 +73,7 @@ const Header: NextPage = () => {
         </span>
         <Link href="/signup">
           <span className="text-sm md:text-base font-medium cursor-pointer hover:text-crystal">
-            SIGN UP
+            SIGN IN
           </span>
         </Link>
       </div>

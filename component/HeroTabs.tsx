@@ -23,14 +23,28 @@ const HeroTabs = () => {
         shareCount: 2,
       },
       {
-        id: 1,
+        id: 3,
         title: "Does drinking coffee make you smarter?",
         date: "5h ago",
         commentCount: 5,
         shareCount: 2,
       },
       {
-        id: 1,
+        id: 4,
+        title: "Does drinking coffee make you smarter?",
+        date: "5h ago",
+        commentCount: 5,
+        shareCount: 2,
+      },
+      {
+        id: 5,
+        title: "Does drinking coffee make you smarter?",
+        date: "5h ago",
+        commentCount: 5,
+        shareCount: 2,
+      },
+      {
+        id: 6,
         title: "Does drinking coffee make you smarter?",
         date: "5h ago",
         commentCount: 5,
@@ -80,11 +94,11 @@ const HeroTabs = () => {
               key={category}
               className={({ selected }) =>
                 classNames(
-                  "w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-crystal",
+                  "w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-primary",
                   "ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2",
                   selected
                     ? "bg-primary shadow text-light"
-                    : "text-blue-100 hover:bg-white/[0.12] hover:text-crystal",
+                    : "text-primary hover:bg-white/[0.12] hover:text-crystal",
                     "hover:bg-primary hover:shadow hover:text-light"
                 )
               }
@@ -93,7 +107,7 @@ const HeroTabs = () => {
             </Tab>
           ))}
         </Tab.List>
-        <Tab.Panels className="mt-2 overflow-auto h-60">
+        <Tab.Panels className="mt-2 overflow-auto h-[345px]">
           {Object.values(categories).map((posts, idx) => (
             <Tab.Panel
               key={idx}
