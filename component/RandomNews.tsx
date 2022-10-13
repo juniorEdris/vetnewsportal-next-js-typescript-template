@@ -23,7 +23,9 @@ const RandomNews: NextPage = () => {
   );
   return (
     <div className="my-8">
-      <h2 className="my-2 text-xl font-semibold capitalize border-l-4 border-primary pl-2 text-primary">wolrd news</h2>
+      <h2 className="my-2 text-xl font-semibold capitalize border-l-4 border-primary pl-2 text-primary">
+        wolrd news
+      </h2>
       <div className="flex flex-wrap gap-3 items-center">
         {post}
         {post}
