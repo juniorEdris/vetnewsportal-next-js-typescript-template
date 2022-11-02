@@ -11,10 +11,8 @@ export const config = {
 
 export function middleware(req: NextRequest) {
   // Extract country. Default to US if not found.
-  const country = (req.geo && req.geo.country) || "US";
+  const country = (req.geo && req.geo.country) || "BN";
   //   const acc = localStorage.getItem("acc");
-
-  console.log(`Visitor from ${country}`);
 
   // Specify the correct route based on the requests location
   if (country === BLOCKED_COUNTRY) {

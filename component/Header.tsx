@@ -68,15 +68,15 @@ const Header: NextPage = () => {
         </form>
       </div>
       <div className="flex justify-center items-center">
-        <span className="cursor-pointer mr-3 text-sm md:text-base font-medium hover:text-crystal">
+        {/* <span className="cursor-pointer mr-3 text-sm md:text-base font-medium hover:text-crystal">
           Sign up for newsletters
-        </span>
-        <Link href="/signup">
+        </span>*/}
+        <Link href="/signin">
           <span className="text-sm md:text-base font-medium cursor-pointer hover:text-crystal">
             SIGN IN
           </span>
         </Link>
-      </div>
+      </div> 
     </div>
   );
 };
