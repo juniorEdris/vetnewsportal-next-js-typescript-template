@@ -1,4 +1,6 @@
 import { NextPage } from "next";
+import { worldNews } from "../utils/data";
+import { SectionHeading } from "../utils/templates/atoms";
 import Post from "../utils/templates/posts";
 
 const RandomNews: NextPage = () => {
@@ -10,19 +12,24 @@ const RandomNews: NextPage = () => {
       description={
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum addolorum necessitatibus atque laborum consectetur unde nobis odio!"
       }
+      route={`/`}
     />
   );
   return (
     <div className="my-8">
-      <h2 className="my-2 text-xl font-semibold capitalize border-l-4 border-primary pl-2 text-primary">
-        wolrd news
-      </h2>
+      <SectionHeading heading="wolrd news" />
       <div className="flex flex-wrap gap-3 items-center">
-        {post}
-        {post}
-        {post}
-        {post}
-        {post}
+        {worldNews?.map((news, idx) => (
+          <Post
+            key={idx}
+            id={idx}
+            title={`${news?.title.substring(0,50)}...`}
+            image={news?.image}
+            description={
+              `${news?.description.substring(0,90)}...`}
+            route={`/${idx}`}
+          />
+        ))}
       </div>
     </div>
   );

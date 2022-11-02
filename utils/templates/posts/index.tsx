@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { Description, Heading } from "../atoms";
 
 interface postProps {
   id: number;
@@ -8,22 +9,40 @@ interface postProps {
   image: string;
   description: string;
   time?: string;
+  route?: string;
 }
 
-const Post = ({ id, title, image, description, time }: postProps) => {
+const Post = ({
+  id,
+  title,
+  image,
+  description,
+  time,
+  route = "/",
+}: postProps) => {
   return (
-    <Link href="/" className="" key={id}>
-      <div className="group cursor-pointer  w-48% md:w-32% lg:w-24% ">
-        <div className="w-full py-3  group-hover:opacity-75 transition duration-[300ms]">
-          <Image src={image} alt={title} height="72px" width="100%" layout="responsive" />
+    <div className="group cursor-pointer w-48% md:w-32% lg:w-24%">
+    <Link href={route} className="" key={id}>
+      <a>
+        <div className="">
+          <div className="w-full">
+            <Image
+              src={image}
+              alt={title}
+              height="72px"
+              width="100%"
+              layout="responsive"
+              className="transition ease-in-out delay-150 group-hover:scale-125 duration-300 "
+            />
+          </div>
+          <div className="p-2">
+            <Heading heading={title} customClass="font-medium text-lg" />
+            <Description content={description} customClass="text-left" />
+          </div>
         </div>
-        <h2 className="font-semibold text-lg">
-          {title}
-        </h2>
-        <p className="text-left">{description}</p>
-      </div>
-      {/**-------- */}
+      </a>
     </Link>
+    </div>
   );
 };
 

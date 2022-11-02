@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import CategoryNews from "../component/CategoryNews";
 import Hero from "../component/Hero";
 import RandomNews from "../component/RandomNews";
 
@@ -13,6 +14,7 @@ const Home: NextPage = () => {
       </Head>
       <Hero />
       <RandomNews />
+      <CategoryNews/>
     </div>
   );
 };
