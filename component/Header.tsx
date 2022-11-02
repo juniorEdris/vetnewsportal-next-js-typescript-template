@@ -1,7 +1,6 @@
 import { NextPage } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import logo from "../utils/images/logo.png";
 import { BiSearch } from "react-icons/bi";
 import { useState } from "react";
 
@@ -37,10 +36,12 @@ const Header: NextPage = () => {
         <Link href="/">
           <div className="w-[100px] md:w-[129px] md:h-[30px] h-[38px]">
             <Image
-              src={logo}
+              src={"/images/logo.png"}
               alt="logo image"
               layout="responsive"
               className="cursor-pointer"
+              height="22px"
+              width="100%"
             />
           </div>
         </Link>
